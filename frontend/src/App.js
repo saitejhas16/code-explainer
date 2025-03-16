@@ -75,7 +75,7 @@ const App = () => {
         {/* Title */}
         <h1 className="title">Code Explainer</h1>
         
-        {/* View the Creator */}
+        {/* View the Creator's Linkedin */}
         <span
           className="creator-link"
           onClick={() => window.open('https://www.linkedin.com/in/lnsaitejhas', '_blank')}
