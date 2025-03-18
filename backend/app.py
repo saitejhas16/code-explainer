@@ -23,7 +23,7 @@ def home():
 @app.route('/explain', methods=['POST'])
 def explain_code():
     try:
-        data = request.get_json()
+        data = request.json
         code_snippet = data.get('code')
         language = data.get('language', 'Unknown')
 
