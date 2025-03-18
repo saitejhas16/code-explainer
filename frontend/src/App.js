@@ -33,13 +33,14 @@ const App = () => {
     setLanguage(detectedLanguage);
 
     try {
-      const response = await fetch('https://code-explainer-770n.onrender.com/explain', {
+      const response = await fetch('https://code-explainer-770n.onrender.com/explain?v=' + new Date().getTime(), {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json',
+          'Content-Type': 'application/json',
         },
         body: JSON.stringify({ code, language: detectedLanguage }),
-    });
+      });
+      
     
       if (response.ok) {
         const data = await response.json();
