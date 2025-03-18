@@ -33,7 +33,7 @@ const App = () => {
     setLanguage(detectedLanguage);
 
     try {
-      const response = await fetch('https://code-explainer-770n.onrender.com', {
+      const response = await fetch('https://code-explainer-770n.onrender.com/explain', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
