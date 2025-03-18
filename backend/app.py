@@ -4,7 +4,9 @@ import google.generativeai as genai
 
 app = Flask(__name__)
 CORS(app)
-
+@app.route("/")
+def home():
+    return "Code Explainer Backend is Running!"
 # Set your Google Gemini API key here
 genai.configure(api_key="AIzaSyDpr_IWrS_-7bzvsTKPoXq4A8ulEkoJUzA")
 
